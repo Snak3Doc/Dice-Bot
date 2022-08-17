@@ -72,7 +72,7 @@ async def diceFunction(message):
     emb.color = Color.orange()
     emb.description = f"**Total Throw Value: {throwTotal}\nThrow Operator: {throwTotal} {operator} {operatorNum}\nFinal Throw Value: {operatorAns}**"
     #emb = Embed(description= f"Total Throw Value: {throwTotal}\nThrow Operator: {throwTotal} {operator} {operatorNum}\nFinal Throw Value: {operatorAns}") 
-    emb.set_author(name = message.author.display_name + f"Rolled: {diceInput}", icon_url = message.author.avatar_url)
+    emb.set_author(name = message.author.display_name + f" Rolled: {diceInput}", icon_url = message.author.avatar_url)
     await message.channel.send(embed=emb)
 
     
